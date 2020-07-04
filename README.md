@@ -34,3 +34,10 @@ This is the easiest part. In order to run the simulator, you only need to execut
 
 `$ roslaunch Gazebo-simulator Gazebo.launch`
 
+This command will automatically launch:
+
+* Five autonomous vehicles
+* The vehicle you drive
+* The world
+* The ROS node you need to drive your car
+
