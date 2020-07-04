@@ -1,5 +1,7 @@
 # Gazebo-simulator
 
+![Prius] (https://camo.githubusercontent.com/9cadf02ca935944b325ed7de6334899b90863534/68747470733a2f2f7777772e6f7372666f756e646174696f6e2e6f72672f776f72647072657373322f77702d636f6e74656e742f75706c6f6164732f323031372f30362f70726975735f726f756e6461626f75745f657869742e706e67)
+
 Gazebo is an Open Source simulator very useful for control and path planning applicationes, such as autonomous driving among others. 
 
 ## Pre requisites
