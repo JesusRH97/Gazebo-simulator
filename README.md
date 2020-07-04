@@ -21,7 +21,7 @@ You must be familiar with ROS, which is the framework used in this project. If y
 
 ## Folders
 
-In this section you will be explained how the project is structured:
+In this section it will be explained how the project is structured:
 
 * **src**: this folder contains all the software which run the simulator. Here you will find the codes of the circuits and the vehicles.
 * **world**: this folder contains the XML description of the visual world developed in Gazebo. If you want to modify the visual look of the world, you can either change some lines of the XML file or modify it directly in Gazebo.
