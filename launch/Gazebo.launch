@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="model" default="$(find tfg)/prius_description/urdf/prius.urdf"/>
+  <arg name="rvizconfig" default="$(find tfg)/rviz/demo.rviz" />
+
+  <param name="robot_description" textfile="$(arg model)"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+
+    <arg name="verbose" value="true"/>
+    <arg name="world_name" value="$(find Gazebo-simulator)/world/Gazebo.world"/>
+
+
+  </include>
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
+
+  </node>
+  <node pkg="fake_localization" type="fake_localization" name="fake_localization">
+    
+  </node>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="very_inaccurate_odom" args="0 0 0 0 0 0 odom base_link"/>
+
+  <node pkg="tfg" type="joystick_translator" name="joystick_translator"/>
+  <node pkg="joy" type="joy_node" name="joy_node"/>
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x -2.19 -y 104.38 -z 0 -R 0 -P 0 -Y -1.57 -model prius"/>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+
+  <!-- args: -speed -lane(right or left) -position -vehicle_name -node_name
+  <node pkg="Gazebo-simulator" name="node1" type="node1.py" args="100 left 0 bus node1" respawn="true" />
+-->
+
+  <node pkg="Gazebo-simulator" name="node1" type="bus.py"/>
+  <node pkg="Gazebo-simulator" name="node2" type="ambulance.py"/>
+  <node pkg="Gazebo-simulator" name="node3" type="prius.py"/>
+  <node pkg="Gazebo-simulator" name="planificacion_1" type="prius1_frenet.py" />
+  <node pkg="Gazebo-simulator" name="planificacion_2" type="prius2_frenet.py" />
+
+  
+</launch>
