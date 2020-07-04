@@ -1,6 +1,10 @@
 # Gazebo-simulator
 
+If you have reached this website, you may want to run this project on your computer and try it out yourself. Well, firs of all, you and your computer need to meet some conditions.
+
 ## Pre requisites
+
+Some of the following sections are a must if you want to run the simulator on your computer
 
 ### Software
 
