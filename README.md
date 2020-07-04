@@ -36,7 +36,7 @@ This is the easiest part. In order to run the simulator, you only need to execut
 
 This command will automatically launch:
 
-* Five autonomous vehicles
+* Five autonomous vehicles (three cars, one ambulance and one bus)
 * The vehicle you drive
 * The world
 * The ROS node you need to drive your car
