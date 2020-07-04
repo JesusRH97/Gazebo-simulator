@@ -14,3 +14,14 @@ Some of the following sections are a must if you want to run the simulator on yo
 ### ROS
 
 You must be familiar with ROS, which is the framework used in this project. If you are not, then visit again the wiki of ROS and complete the tutorials from 1 to 12 (you can skip the C++ units since the whole project is programmed in Python): <http://wiki.ros.org/ROS/Tutorials>
+
+
+## Instructions to run the simulator
+
+Once you are done with the pre requisites section, you need to know some tips so you can run the simulator with no problems.
+
+## Folders
+
+Here you will be explained how thw project is structured:
+
+* 
