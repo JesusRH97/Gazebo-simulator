@@ -1,6 +1,9 @@
-# Gazebo-simulator ![Prius](https://camo.githubusercontent.com/9cadf02ca935944b325ed7de6334899b90863534/68747470733a2f2f7777772e6f7372666f756e646174696f6e2e6f72672f776f72647072657373322f77702d636f6e74656e742f75706c6f6164732f323031372f30362f70726975735f726f756e6461626f75745f657869742e706e67)
+# Gazebo-simulator 
 
-Gazebo is an Open Source simulator very useful for control and path planning applicationes, such as autonomous driving among others. 
+Welcome to the Gazebo simulator. Gazebo is an Open Source simulator very useful for control and path planning applicationes, such as autonomous driving among others. This project consists on a simulator of autonomous vehicles using Open Source tools, such as ROS, Linux and Gazebo. The main idea of the project was to develop an Open Source simulation environment where you, as a driver, can handle your own car in an urban circuit with more vehicles.
+
+
+![Prius](https://camo.githubusercontent.com/9cadf02ca935944b325ed7de6334899b90863534/68747470733a2f2f7777772e6f7372666f756e646174696f6e2e6f72672f776f72647072657373322f77702d636f6e74656e742f75706c6f6164732f323031372f30362f70726975735f726f756e6461626f75745f657869742e706e67)
 
 ## Pre requisites
 
@@ -38,12 +41,10 @@ This command will automatically launch:
 
 * Five autonomous vehicles (three cars, one ambulance and one bus)
 * The vehicle you drive
-* The world
+* The simulation environment in Gazebo
 * The ROS node you need to drive your car
 
 ## PythonRobotics
-
-![PythonRobotics](https://raw.githubusercontent.com/AtsushiSakai/PythonRobotics/master/icon.png)
 
 PythonRobotics is the repository of GitHub which the algorithm of the vehicles is based on. You can visit this repository on the following link: <https://github.com/AtsushiSakai/PythonRobotics> 
 
