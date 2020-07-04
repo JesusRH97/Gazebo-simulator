@@ -45,6 +45,8 @@ This command will automatically launch:
 
 ## PythonRobotics
 
+![PythonRobotics](https://raw.githubusercontent.com/AtsushiSakai/PythonRobotics/master/icon.png)
+
 PythonRobotics is the repository of GitHub which the algorithm of the vehicles is based on. You can visit this repository on the following link: <https://github.com/AtsushiSakai/PythonRobotics> 
 
 PythonRobotics uses the Frenet coordinates system proposed in <https://d17h27t6h515a5.cloudfront.net/topher/2017/July/595fd482_werling-optimal-trajectory-generation-for-dynamic-street-scenarios-in-a-frenet-frame/werling-optimal-trajectory-generation-for-dynamic-street-scenarios-in-a-frenet-frame.pdf>
