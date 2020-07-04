@@ -25,7 +25,7 @@ In this section you will be explained how the project is structured:
 * **rviz**: this is just a folder for Rviz, which another simulator (the one you will use to drive your own car). Dont you mind about this folder.
 * **prius_description**: the car you are driving in the simulator (Toyota Prius) is placed in this folder. Here you will find the URDF file of the vehicle. The URDF file (Unified Robot Description Format) is the description of the robot itself. You can remove some parts of the car, such as sensors, by placing some comments on the code.
 * **launch**: this folders contains the code to launch the simulator at once. You will be explained how to do this in later sections.
-* **models**: the folder which contains the XML descriptions of the roads of the circuit. Pay attention because this is very important as long as you want to run the simulator succesfully. **YOU MUST PLACE THIS FOLDER ON THE ".gazebo" FOLDER**, which is placed on your personal path. This folder is a hidden folder of Ubuntu and you will realise of it by pressing Ctrl+H.
+* **models**: the folder which contains the XML descriptions of the roads of the circuit. Pay attention because this is very important as long as you want to run the simulator succesfully. **YOU MUST PLACE THIS FOLDER ON THE ".gazebo" FOLDER**, which is placed on your personal path (in my case, /home/jesus). This folder is a hidden folder of Ubuntu and you will realise of it by pressing Ctrl+H.
 * **PythonRobotics**: appart from being a folder of this repository, this is a repository as well. The algorithm of the autonomous cars is based on the idea of PythonRobotics.
 
 ## Instructions to run the simulator
