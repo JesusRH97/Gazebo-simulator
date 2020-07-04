@@ -31,5 +31,6 @@ In this section you will be explained how the project is structured:
 ## Instructions to run the simulator
 
 This is the easiest part. In order to run the simulator, you only need to execute the following command on your terminal:
+
 `$ roslaunch Gazebo-simulator Gazebo.launch`
 
