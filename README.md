@@ -4,7 +4,7 @@ If you have reached this website, you may want to run this project on your compu
 
 ## Pre requisites
 
-Some of the following sections are a must if you want to run the simulator on your computer. If you are already done with this part, you can skip it.
+Some of the following sections are a must if you want to run the simulator on your computer. If you are already done with this part, you can skip it and go ahead with the following.
 
 ### Software
 
