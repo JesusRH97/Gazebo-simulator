@@ -16,10 +16,13 @@ If you have reached this website, you may want to run this project on your compu
 
 ### Hardware
 
+The following are some recommended hardware specifications:
+
 * 8Gb RAM
 * Intel core i5
 * GPU (recommended)
-* Xbox 360/PlayStation remote control
+
+Of course, in order to drive your user car you will need a Xbox 360/PlayStation remote control
 
 ### ROS
 
