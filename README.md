@@ -20,7 +20,7 @@ Of course, in order to drive your user car you will need a Xbox 360/PlayStation 
 
 ### ROS
 
-You must be familiar with ROS, which is the framework used in this project. If you are not, then visit again the wiki of ROS and complete the tutorials from 1 to 12 (you can skip the C++ units since the whole project is programmed in Python): <http://wiki.ros.org/ROS/Tutorials>
+You must be familiar with ROS since is the framework used in this project. If you are not, then visit again the wiki of ROS and complete the tutorials from 1 to 12 (you can skip the C++ units since the whole project is programmed in Python): <http://wiki.ros.org/ROS/Tutorials>
 
 
 ## Folders
