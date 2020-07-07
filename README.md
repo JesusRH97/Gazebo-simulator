@@ -13,16 +13,10 @@ If you have reached this website, you may want to run this project on your compu
 
 * Ubuntu 18.04
 * Having installed ROS (melodic version). If you dont have set up ROS on your computer, visit the wiki of ROS as follows: <http://wiki.ros.org/melodic/Installation/Ubuntu>
-
-### Hardware
-
-The following are some recommended hardware specifications:
-
 * 8Gb RAM
-* Intel core i5
-* GPU (recommended)
 
 Of course, in order to drive your user car you will need a Xbox 360/PlayStation remote control
+
 
 ### ROS
 
