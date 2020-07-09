@@ -1,6 +1,9 @@
-# Gazebo-simulator
+# Gazebo-simulator 
 
-Gazebo is an Open Source simulator very useful for control and path planning applicationes, such as autonomous driving among others. 
+Welcome to the Gazebo simulator. Gazebo is an Open Source simulator very useful for control and path planning applicationes, such as autonomous driving among others. This project consists on a simulator of autonomous vehicles using Open Source tools, such as ROS, Linux and Gazebo. The main idea of the project was to develop an Open Source simulation environment where you, as a driver, can handle your own car (the one shown on the image below) in an urban circuit with more vehicles.
+
+
+![Prius](https://camo.githubusercontent.com/9cadf02ca935944b325ed7de6334899b90863534/68747470733a2f2f7777772e6f7372666f756e646174696f6e2e6f72672f776f72647072657373322f77702d636f6e74656e742f75706c6f6164732f323031372f30362f70726975735f726f756e6461626f75745f657869742e706e67)
 
 ## Pre requisites
 
@@ -10,15 +13,19 @@ If you have reached this website, you may want to run this project on your compu
 
 * Ubuntu 18.04
 * Having installed ROS (melodic version). If you dont have set up ROS on your computer, visit the wiki of ROS as follows: <http://wiki.ros.org/melodic/Installation/Ubuntu>
+* 8Gb RAM
+
+Of course, in order to drive your user car you will need a Xbox 360/PlayStation remote control
+
 
 ### ROS
 
-You must be familiar with ROS, which is the framework used in this project. If you are not, then visit again the wiki of ROS and complete the tutorials from 1 to 12 (you can skip the C++ units since the whole project is programmed in Python): <http://wiki.ros.org/ROS/Tutorials>
+You must be familiar with ROS since is the framework used in this project. If you are not, then visit again the wiki of ROS and complete the tutorials from 1 to 12 (you can skip the C++ units since the whole project is programmed in Python): <http://wiki.ros.org/ROS/Tutorials>
 
 
 ## Folders
 
-In this section you will be explained how the project is structured:
+In this section it will be explained how the project is structured:
 
 * **src**: this folder contains all the software which run the simulator. Here you will find the codes of the circuits and the vehicles.
 * **world**: this folder contains the XML description of the visual world developed in Gazebo. If you want to modify the visual look of the world, you can either change some lines of the XML file or modify it directly in Gazebo.
@@ -38,6 +45,12 @@ This command will automatically launch:
 
 * Five autonomous vehicles (three cars, one ambulance and one bus)
 * The vehicle you drive
-* The world
+* The simulation environment in Gazebo
 * The ROS node you need to drive your car
+
+## PythonRobotics
+
+PythonRobotics is the repository of GitHub which the algorithm of the vehicles of Gazebo is based on. You can visit this repository on the following link: <https://github.com/AtsushiSakai/PythonRobotics> 
+
+PythonRobotics uses the Frenet coordinates system proposed in <https://d17h27t6h515a5.cloudfront.net/topher/2017/July/595fd482_werling-optimal-trajectory-generation-for-dynamic-street-scenarios-in-a-frenet-frame/werling-optimal-trajectory-generation-for-dynamic-street-scenarios-in-a-frenet-frame.pdf>
 
