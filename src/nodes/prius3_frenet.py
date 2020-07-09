@@ -371,7 +371,7 @@ def main():
     rate = rospy.Rate(1.0/DT2)
 
     nodo = ModelState()
-    nodo.model_name = "prius_hybrid_0"
+    nodo.model_name = "prius_hybrid_2"
 
     circuit = Circuit()
     circuit.run()
@@ -405,7 +405,7 @@ def main():
     c_d = 0.0  # current lateral position [m]
     c_d_d = 0.0  # current lateral speed [m/s]
     c_d_dd = 0.0  # current lateral acceleration [m/s]
-    s0 = 273.0  # current course position
+    s0 = 273.0*3  # current course position
 
     area = 20.0  # animation area length [m]
 

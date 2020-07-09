@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <launch>
 
-  <arg name="model" default="$(find tfg)/prius_description/urdf/prius.urdf"/>
-  <arg name="rvizconfig" default="$(find tfg)/rviz/demo.rviz" />
+  <arg name="model" default="$(find Gazebo-simulator)/prius_description/urdf/prius.urdf"/>
+  <arg name="rvizconfig" default="$(find Gazebo-simulator)/rviz/demo.rviz" />
 
   <param name="robot_description" textfile="$(arg model)"/>
 
@@ -33,11 +33,12 @@
   <node pkg="Gazebo-simulator" name="node1" type="node1.py" args="100 left 0 bus node1" respawn="true" />
 -->
 
-  <node pkg="Gazebo-simulator" name="node1" type="bus.py"/>
-  <node pkg="Gazebo-simulator" name="node2" type="ambulance.py"/>
-  <node pkg="Gazebo-simulator" name="node3" type="prius.py"/>
-  <node pkg="Gazebo-simulator" name="planificacion_1" type="prius1_frenet.py" />
-  <node pkg="Gazebo-simulator" name="planificacion_2" type="prius2_frenet.py" />
+  <node pkg="Gazebo-simulator" name="bus" type="bus.py"/>
+  <node pkg="Gazebo-simulator" name="ambulance" type="ambulance.py"/>
+  <node pkg="Gazebo-simulator" name="prius" type="prius.py"/>
+  <node pkg="Gazebo-simulator" name="prius_frenet_1" type="prius1_frenet.py" />
+  <node pkg="Gazebo-simulator" name="prius_frenet_2" type="prius2_frenet.py" />
+  <node pkg="Gazebo-simulator" name="prius_frenet_3" type="prius3_frenet.py" />
 
   
 </launch>

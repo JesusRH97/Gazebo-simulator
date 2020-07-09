@@ -57,7 +57,7 @@ class Straight_Road(Road):
 
 			y = (m*self.corners[0]) + n
 			self.points.append([self.corners[0], y, 0])
-			self.corners[0] = self.corners[0] + abs((10.0*cos(alpha)))
+			self.corners[0] = self.corners[0] + abs((5.0*cos(alpha)))
 
 
 	"""

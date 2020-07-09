@@ -402,7 +402,7 @@ def main():
     c_d = 0.0  # current lateral position [m]
     c_d_d = 0.0  # current lateral speed [m/s]
     c_d_dd = 0.0  # current lateral acceleration [m/s]
-    s0 = 0.0  # current course position
+    s0 = 273.0*2  # current course position
 
     area = 20.0  # animation area length [m]
 
