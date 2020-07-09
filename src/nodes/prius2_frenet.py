@@ -249,7 +249,6 @@ def check_paths(fplist, ob):
 
 def frenet_optimal_planning(csp, s0, c_speed, c_acc, c_d, c_d_d, c_d_dd, ob):
 
-    rospy.loginfo("Calculando trayectorias posibles...")
 
     fplist = calc_frenet_paths(c_speed, c_acc, c_d, c_d_d, c_d_dd, s0)
     fplist = calc_global_paths(fplist, csp)
@@ -311,12 +310,6 @@ def callback(data):
     x1 = x_prius + (2.5*math.cos(yaw))
     y1 = y_prius + (2.5*math.sin(yaw))
 
-    x2 = x_prius - (2.5*math.cos(yaw))
-    y2 = y_prius - (2.5*math.sin(yaw))
-
-    x3 = x_prius - (8.0*math.cos(yaw))
-    y3 = y_prius - (8.0*math.sin(yaw))
-
     x4 = x_prius + (5.0*math.cos(yaw))
     y4 = y_prius + (5.0*math.sin(yaw))
 
@@ -367,12 +360,6 @@ def callback(data):
         ob[0][0] = x1
         ob[0][1] = y1
 
-        #ob[1][0] = x2
-        #ob[1][1] = y2
-
-        #ob[2][0] = x3
-        #ob[2][1] = y3
-
         ob[3][0] = x4
         ob[3][1] = y4
 
@@ -408,24 +395,21 @@ def main():
     tx, ty, tyaw, tc, csp = generate_target_course(wx, wy)
 
 
-    print(len(tx))
-
-    """
+    
     # initial state
     c_speed = 1.0  # current speed [m/s]
     c_acc = 0.0
     c_d = 0.0  # current lateral position [m]
     c_d_d = 0.0  # current lateral speed [m/s]
     c_d_dd = 0.0  # current lateral acceleration [m/s]
-    s0 = 110.0  # current course position
+    s0 = 0.0  # current course position
 
     area = 20.0  # animation area length [m]
 
 
     
     for i in range(SIM_LOOP):
-  
-        rospy.loginfo(i) 
+   
 
         path = None
 
@@ -473,7 +457,7 @@ def main():
     
         pub.publish(nodo)
         rate.sleep()
-    """
+    
 
     while not rospy.is_shutdown():
 

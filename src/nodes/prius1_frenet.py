@@ -249,8 +249,6 @@ def check_paths(fplist, ob):
 
 def frenet_optimal_planning(csp, s0, c_speed, c_acc, c_d, c_d_d, c_d_dd, ob):
 
-    rospy.loginfo("Calculando trayectorias posibles...")
-
     fplist = calc_frenet_paths(c_speed, c_acc, c_d, c_d_d, c_d_dd, s0)
     fplist = calc_global_paths(fplist, csp)
     fplist = check_paths(fplist, ob)
@@ -311,12 +309,6 @@ def callback(data):
     x1 = x_prius + (2.5*math.cos(yaw))
     y1 = y_prius + (2.5*math.sin(yaw))
 
-    x2 = x_prius - (2.5*math.cos(yaw))
-    y2 = y_prius - (2.5*math.sin(yaw))
-
-    x3 = x_prius - (8.0*math.cos(yaw))
-    y3 = y_prius - (8.0*math.sin(yaw))
-
     x4 = x_prius + (5.0*math.cos(yaw))
     y4 = y_prius + (5.0*math.sin(yaw))
 
@@ -330,7 +322,6 @@ def callback(data):
 
     distance = math.sqrt(math.pow(x_prius_0 - x6, 2) + math.pow(y_prius_0 - y6, 2))
 
-    #print("Distancia con respecto el ultimo obs: "+str(distance))
     if distance <= 5.0:
         ob[4][0] = 4
         ob[4][1] = 4
@@ -367,12 +358,6 @@ def callback(data):
         ob[0][0] = x1
         ob[0][1] = y1
 
-        #ob[1][0] = x2
-        #ob[1][1] = y2
-
-        #ob[2][0] = x3
-        #ob[2][1] = y3
-
         ob[3][0] = x4
         ob[3][1] = y4
 
@@ -408,9 +393,6 @@ def main():
     tx, ty, tyaw, tc, csp = generate_target_course(wx, wy)
 
 
-    print(len(tx))
-
-
     # initial state
     c_speed = 1.0  # current speed [m/s]
     c_acc = 0.0
@@ -424,8 +406,7 @@ def main():
 
     
     for i in range(SIM_LOOP):
-   
-        rospy.loginfo(i) 
+    
 
         path = None
 

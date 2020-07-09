@@ -44,7 +44,7 @@ def calculate_position_and_orientation(nodo, position, previous_position):
 	nodo.pose.orientation.z = quaternion[2]
 	nodo.pose.orientation.w = quaternion[3]
 
-	nodo.pose.position.x, nodo.pose.position.y, nodo.pose.position.z = lane(position[0], position[1], angle, "left")
+	nodo.pose.position.x, nodo.pose.position.y, nodo.pose.position.z = lane(position[0], position[1], angle, "right")
 
 	return nodo
 
