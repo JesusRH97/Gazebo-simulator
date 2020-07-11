@@ -52,7 +52,7 @@ This command will automatically launch:
 
 PythonRobotics is the repository of GitHub which the algorithm of the vehicles of Gazebo is based on. You can visit this repository on the following link: <https://github.com/AtsushiSakai/PythonRobotics> 
 
-PythonRobotics uses the Frenet coordinates system proposed in ![this paper](https://d17h27t6h515a5.cloudfront.net/topher/2017/July/595fd482_werling-optimal-trajectory-generation-for-dynamic-street-scenarios-in-a-frenet-frame/werling-optimal-trajectory-generation-for-dynamic-street-scenarios-in-a-frenet-frame.pdf)
+PythonRobotics uses the Frenet coordinates system proposed in [this paper](https://d17h27t6h515a5.cloudfront.net/topher/2017/July/595fd482_werling-optimal-trajectory-generation-for-dynamic-street-scenarios-in-a-frenet-frame/werling-optimal-trajectory-generation-for-dynamic-street-scenarios-in-a-frenet-frame.pdf)
 
 ![Frenet](https://raw.githubusercontent.com/AtsushiSakai/PythonRoboticsGifs/master/PathPlanning/FrenetOptimalTrajectory/animation.gif)
 
