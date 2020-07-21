@@ -27,8 +27,8 @@ You must be familiar with ROS since is the framework used in this project. If yo
 
 In this section it will be explained how the project is structured:
 
-* **src**: this folder contains all the software which run the simulator. Here you will find the codes of the circuits and the vehicles.
-* **world**: this folder contains the XML description of the visual world developed in Gazebo. If you want to modify the visual look of the world, you can either change some lines of the XML file or modify it directly in Gazebo.
+* **src**: this folder contains all the software which runs the simulator. Here you will find the codes of the circuits and the nodes of the vehicles.
+* **world**: this folder contains the XML description of the visual world developed in Gazebo. If you want to modify the look of the world, you can either change some lines of the XML file or modify it directly in Gazebo.
 * **rviz**: this is just a folder for Rviz, which another simulator (the one you will use to drive your own car). Dont you mind about this folder.
 * **prius_description**: the car you are driving in the simulator (Toyota Prius) is placed in this folder. Here you will find the URDF file of the vehicle. The URDF file (Unified Robot Description Format) is the description of the robot itself. You can remove some parts of the car, such as sensors, by placing some comments on the code.
 * **launch**: this folders contains the code to launch the simulator at once. You will be explained how to do this in later sections.
@@ -43,7 +43,7 @@ This is the easiest part. In order to run the simulator, you only need to execut
 
 This command will automatically launch:
 
-* Five autonomous vehicles (three cars, one ambulance and one bus)
+* Six autonomous vehicles (four cars, one ambulance and one bus)
 * The vehicle you drive
 * The simulation environment in Gazebo
 * The ROS node you need to drive your car
