@@ -7,7 +7,7 @@ Welcome to the Gazebo simulator. Gazebo is an Open Source simulator very useful 
 
 ## Pre requisites
 
-If you have reached this website, you may want to run this project on your computer and try it out yourself. Well, first of all, you and your computer need to meet some conditions. Some of the following sections are a must if you want to run the simulator on your computer. If you are already done with this part, you can skip it and go ahead with the following.
+If you have reached this website, you may want to run this project on your computer and try it out yourself. Well, first of all, you and your computer need to meet some conditions. Some of the following sections are a must if you want to run the simulator on your computer successfully. If you are already done with this part, you can skip it and go ahead with the following one.
 
 ### Software
 
